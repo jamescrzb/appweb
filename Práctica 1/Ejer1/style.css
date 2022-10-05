@@ -1,0 +1,58 @@
+body{
+	margin: 0%;
+	background-color: rgb(171, 193, 186);
+}
+.title{
+	margin-left: 20%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.banner{
+	background-color: black;
+	margin-top: 0px;
+	color: white;
+	letter-spacing: 5px;
+	font-weight: bolder;
+	font-size: 250%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 0px;
+	margin-right: 80%;
+	padding-left: 2px;
+}
+.list{
+	padding-right: 4.1%;
+	position:absolute;
+}
+.black{
+	color: black;
+}
+.logo{
+	background-image: url('./Ayuda/logo_arduino.png');
+	position: absolute;
+	margin-left: 18%;
+	background-repeat: repeat-y;
+	background-size: 60px 60px;
+	margin-top: 0%;
+	height: 90%;
+	width: 6.4%;
+}
+.info{
+	margin-left: 30%
+}
+.ard{
+	margin: 0%;
+	color: white;
+	background-color: black;
+	font-weight: bolder;
+	font-size: 200%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-right: 20%;
+	padding-left: 2%;
+}
+.text{
+	margin-top: 3%;
+	margin-right: 20%;
+}
+.tuvi{
+	width: 80%;
+}

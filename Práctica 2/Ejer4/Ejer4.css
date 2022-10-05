@@ -1,0 +1,40 @@
+.title{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 43%;
+	padding-left: 0.5%;
+	background-color: orange;
+	color: rgb(5, 5, 188);
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 24px;
+}
+.info{
+	border: black solid 5px;
+	background-color: yellow;
+}
+.text{
+	text-align: center;
+	width: 190px;
+}
+.city{
+	width: 39%;
+}
+.number{
+	width: 19%;
+}
+.number2{
+	width: 7%;
+}
+.button{
+	margin-top: 5px;
+	color: blue;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+	text-decoration: underline 2px;
+	border-color: blue;
+	font-size: large;
+	background-color: white;
+
+}

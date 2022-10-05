@@ -1,0 +1,1 @@
+Ejercicio 4: Edge, 1366x768, Mitad pantalla derecha

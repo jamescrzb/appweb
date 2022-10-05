@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link href="./style.css" rel="stylesheet" type="text/css">    
+<html>
+	<head>
+		<title>Ejercicio 2 Parte a</title>
+	</head>
+	<body>
+		<p class="title">EJEMPLO DE FORMULARIO</p>
+		<form>
+			<fieldset>
+				<legend>Datos personales</legend>
+				<table>
+					<tr>
+						<td class="surn">
+							<span class="red">A</span>pellidos:<br>
+							<input type="text" name="surname" size="30">
+						</td>
+						<td class="nam">
+							N<span class="red">o</span></spana>mbre:<br>
+							<input type="text" name="name">
+						</td>
+						<td>
+							<span class="red">D</span>NI:<br>
+							<input type="text" name="dni" size="7">
+						</td>
+					</tr>
+					<tr>
+						<td class>
+							<span class="red">N</span>acido en:<br>
+							<input type="text" name="surname">
+						</td>
+						<td>
+							Provincia:<br>
+							<select id="prov">
+								<option value="VAL">Valencia</option>
+								<option value="ACO">A Coruña</option>
+								<option value="MAD">Madrid</option>
+								<option value="BAR">Barcelona</option>
+							</select>
+						</td>
+						<td> 
+							<span class="red">F</span>echa nacimiento (dd/mm/aaaa)<br>
+							<input class="date" type="date" name="birth">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Do<span class="red">m</span>icilio:<br>
+							<select id="dom">
+								<option value="cal">Calle</option>
+								<option value="ave">Avenida</option>
+								<option value="glo">Glorieta</option>
+							</select>
+								<input type="text" name="domicilio" size="53">
+						</td>
+						<td>
+							<span class="red">C</span>ódigo Postal:<br>
+							<input type="text" name="cp" size="3">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span class="red">L</span>ocalidad:<br>
+							<input type="text" name="local">
+						</td>							
+						<td>
+							Provincia:<br>
+							<select id="prov">
+								<option value="VAL">Valencia</option>
+								<option value="ACO">A Coruña</option>
+								<option value="MAD">Madrid</option>
+								<option value="BAR">Barcelona</option>
+							</select>
+						<td>
+							<span class="red">T</span>eléfono:<br>
+							<input class="num" type="number" name="phone">
+						</td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<input type="submit" value="Borrar todo"> 
+					<input type="reset" value="Enviar"> 
+				</div>
+			</fieldset>
+		</form>
+	
+	</body>
+</html> 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link href="./Ejer4.css" rel="stylesheet" type="text/css">
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			function erase(){
+				document.info.name.value=""
+				document.info.surname.value=""
+				document.info.surname2.value=""
+				document.info.email.value=""
+				document.info.city.value=
+				document.info.number.value=""
+				document.info.number2.value=""
+			}
+
+			function checkinfo(){
+				count = 0
+				if(document.info.name.value.length < 1){
+					alert("Debes introducir tu nombre.")
+					document.getElementById("name").focus()
+				}
+				else{
+					count = count + 1
+				}
+				if(document.info.surname.value.length < 1){
+					alert("Debes introducir tu apellido.")
+					document.getElementById("surname").focus()
+				}
+				else{
+					count = count + 1
+				}
+				if(document.info.surname2.value.length < 1){
+					alert("Debes introducir tu segundo apellido.")
+					document.getElementById("surname2").focus()
+				}
+				else{
+					count = count + 1
+				}
+				var mail = document.getElementById("email").value
+				if(mail.indexOf("@")==-1){
+					alert("Introduce un email correcto.")
+					document.getElementById("email").focus()
+				}
+				else{
+					count = count + 1
+				}
+				var city = document.getElementById("city");
+				if(city.selectedIndex == 0 || city.value == "") {
+     				alert('Selecciona una ciudad.');
+				}
+				else{
+					count = count + 1
+				}
+				if(document.info.number.value.length != 7){
+					alert("Debes introducir 7 números.")
+					document.getElementById("number").focus()
+				}
+				else{
+					count = count + 1
+				}
+				if(document.info.number2.value.length < 1 || document.info.number2.value.length > 2){
+					alert("Debes introducir uno o dos números.")
+					document.getElementById("number2").focus()
+				}
+				else{
+					count = count + 1
+				}
+				if (count == 7) {
+					alert ("Su solicitud ha sido enviada.")
+				}
+			}
+		</script>
+
+		<p class="title">Solicitud del Informe de Vida Laboral</p>
+		<div class="info">
+			<form name="info">
+				<table>
+					<tr>
+						<td class="text">Nombre:</td>
+						<td><input type="text" id="name"></td>
+					</tr>
+					<tr>
+						<td class="text">Primer apellido:</td>
+						<td><input type="text" id="surname" ></td>
+					</tr>
+					<tr>
+						<td class="text">Segundo apellido:</td>
+						<td><input type="text" id="surname2"></td>
+					</tr>
+					<tr>
+						<td class="text">Correo Electrónico:</td>
+						<td><input type="email" id="email" ></td>
+					</tr>
+					<tr>
+						<td class="text">Número de afiliado a la S.S.:</td>
+						<td>
+							<select class="city" id="city"> 
+								<option value="-">---</option>
+								<option value="acn">A Coruña</option>
+								<option value="mad">Madrid</option>
+								<option value="bcn">Barcelona</option>
+							</select>
+							/ <input class="number" type="number" id="number"> / <input class="number2" type="number" id="number2">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<input class="button" type="button" value="Enviar" onclick="checkinfo()">
+		<input class="button" type="button" value="Borrar" onclick="erase()" >
+	</body>
+</html>

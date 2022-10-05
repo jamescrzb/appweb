@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>
+			Ejercicio 2
+		</title>
+	</head>
+	<body>
+		<script>
+			var disable3p = ""
+			var disablemtl = ""
+			var disabledvd = ""
+
+			function enable3() {
+				if (document.motorf.motor[1].checked || document.motorf.motor[2].checked){
+					document.getElementById("3p").disabled = true;
+					disable3p = true
+					return disable3p
+				}
+				else{
+					document.getElementById("3p").disabled = false;
+					disable3p = false
+					return disable3p
+				}
+			}
+			function enablemtl() {
+				if (document.colorf.color[3].checked || document.colorf.color[4].checked){
+					document.getElementById("metal").disabled = true;
+					disablemtl = true
+					return disablemtl
+				}
+				else{
+					document.getElementById("metal").disabled = false;
+					disablemtl = false
+					return disablemtl
+				}
+			}
+			function enabledvd() {
+				if (document.doorf.door[0].checked || document.doorf.door[1].checked){
+					document.getElementById("dvd").disabled = true;
+					disabledvd = true
+					return disabledvd
+				}
+				else{
+					document.getElementById("dvd").disabled = false;
+					disabledvd = false
+					return disabledvd
+				}
+			}
+			function calc() {
+				var base = parseInt(12000)
+				if (document.getElementById("die").checked){
+					base = base + parseInt(1500)
+				}
+				if (document.getElementById("hib").checked){
+					base = base + parseInt(3000)
+				}
+				
+				if (document.getElementById("3p").checked){
+					if (disable3p == false){
+						base = base - parseInt(2000)
+					}
+					else{
+						document.getElementById("5p").checked = true
+					}
+				}
+				if (document.getElementById("wht").checked){
+					base = base - parseInt(500)
+				}
+				if (document.getElementById("blc").checked){
+					base = base - parseInt(600)
+				}
+				if (document.getElementById("metal").checked){
+					if (disablemtl == false){
+						base = base + parseInt(750)
+					}
+					else{
+						document.getElementById("metal").checked = false
+					}
+				}
+				if (document.getElementById("wheel").checked){
+					base = base + parseInt(200)
+				}
+				if (document.getElementById("aircon").checked){
+					base = base + parseInt(800)
+				}
+				if (document.getElementById("gps").checked){
+					base = base + parseInt(340)
+				}
+				if (document.getElementById("dvd").checked){
+					if (disabledvd == false){
+						base = base - parseInt(800)
+					}
+					else{
+						document.getElementById("dvd").checked = false
+					}
+				}
+				document.getElementById("price").innerHTML = base
+			}
+		</script>
+
+
+		<table border="1">
+			<tr>
+				<td>
+					Configuración del Coche
+				</td>
+			</tr>
+			<tr>
+				<form name="motorf">
+					<td>
+						Tipo de Motor<br>
+						<input type="radio" name="motor" id="gas" onclick="enable3()">Gasolina
+						<input type="radio" name="motor" id="die" onclick="enable3()">Diesel (+1500 €) 
+						<input type="radio" name="motor" id="hib" onclick="enable3()">Híbrido (+3000 €)
+					</td>
+				</form>
+			</tr>
+			<tr>
+				<form name="doorf">
+					<td>
+						Tipo de Puertas<br>
+						<input type="radio" name="door" id="3p" onclick="enabledvd()">3 puertas (-2000 €)(Sólo con gasolina)
+						<input type="radio" name="door" id="5p" onclick="enabledvd()">5 puertas
+						<input type="radio" name="door" id="fam" onclick="enabledvd()">Familiar (+1500 €)
+					</td>
+				</form>
+			</tr>
+			<tr>
+				<form name="colorf">
+					<td>
+						Tipo de Pintura<br>
+						<input type="radio" name="color" id="red" onclick="enablemtl()">Rojo
+						<input type="radio" name="color" id="grn" onclick="enablemtl()">Verde
+						<input type="radio" name="color" id="org" onclick="enablemtl()">Naranjas
+						<input type="radio" name="color" id="wht" onclick="enablemtl()">Blanco (-500 €)
+						<input type="radio" name="color" id="blc" onclick="enablemtl()">Negro (-600 €)
+					</td>
+				</form>
+			</tr>
+			<tr>
+				<form name="optionsf">
+					<td>
+						Seleccionar las que se deseen:<br>
+						<input type="checkbox" name="options" id="metal">Metalizada (+750 €) (Sólo Rojo, Verde o Naranja) <br>
+						<input type="checkbox" name="options" id="wheel">Llantas (+200 €) <br>
+						<input type="checkbox" name="options" id="aircon">Climatizador (+800 €) <br>
+						<input type="checkbox" name="options" id="gps">GPS (+340 €) <br>
+						<input type="checkbox" name="options" id="dvd">DVD (+800 €) (Sólo modelo familiar) <br>
+					</td>
+				</form>
+			</tr>
+			<tr>
+				<td>
+					Total a cobrar: <span id="price">12000</span>€<br>
+					<input type="button" value="Calcular" onclick="calc()">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

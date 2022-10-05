@@ -1,0 +1,132 @@
+body{
+	background-color: rgb(255, 186, 57);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0%;
+}
+.title{
+	margin: 0%;
+	color: rgb(234, 115, 11);
+	background-color: white;
+	border-top: solid 5px;
+	border-bottom: solid 5px;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.autor{
+	float: right;
+	color: black;
+	font-size: 14px;
+	margin-right: 0.2%;
+}
+.subtitle{
+	margin: 0%;
+	padding: 1%;
+	background-color: rgb(234, 115, 11);
+	color: white;
+	font-weight: bolder;
+	font-size: 120%;
+}
+
+div.mobile{
+	background-color: white;
+	margin-top: 1%;
+	margin-left: 1%;
+	width: 30%;
+	position: absolute;
+	height: 43%;
+}
+.gartner{
+	margin-top: 1%;
+	color: rgb(234, 115, 11);
+	border-top: solid 5px;
+	border-bottom: solid 5px;
+	float: right;
+	width: 70%;
+	margin-left: 2%;
+}
+p.mobilea{
+	margin-top: 1%;
+	font-size: 89%;
+	width: 28%;
+	margin-left: 1%;
+}
+p.mobileb{
+	margin-top: 4%;
+	font-size: 89%;
+	width: 28%;
+	margin-left: 1%;
+}
+p{
+	text-align: justify;
+}
+
+div.web{
+	background-color: white;
+	margin-top: 1%;
+	margin-left: 32%;
+	width: 29%;
+	position: absolute;
+	height: 43%;
+}
+p.weba{
+	margin-top: 1%;
+	font-size: 89%;
+	width: 98%;
+	margin-left: 1%;
+}
+p.webb{
+	font-size: 100%;
+	width: 36%;
+	margin-left: 1%;
+	float: left;
+}
+.bolder{
+	font-style: italic;
+	font-weight: bolder;
+}
+.red{
+	font-weight: bold;
+	font-size: 150%;
+	color: brown;
+}
+.net{
+	margin-top: 1%;
+	color: rgb(234, 115, 11);
+	border-top: solid 5px;
+	border-bottom: solid 5px;
+	float: left;
+	width: 60%;
+	margin-left: 2%;
+}
+
+div.wikipedia{
+	background-color: white;
+	margin-top: 24%;
+	margin-left: 1%;
+	width: 30%;
+	position: absolute;
+	height: 43%;
+}
+.gartner{
+	margin-top: 1%;
+	color: rgb(234, 115, 11);
+	border-top: solid 5px;
+	border-bottom: solid 5px;
+	float: right;
+	width: 70%;
+	margin-left: 2%;
+}
+p.wikia{
+	margin: 1%;
+	font-size: 95%;
+}
+.wiki{
+	margin-top: 1%;
+	color: rgb(234, 115, 11);
+	border-top: solid 5px;
+	border-bottom: solid 5px;
+	width: 52%;
+	margin-left: 22%;
+}
+
+

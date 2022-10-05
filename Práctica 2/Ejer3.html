@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejercicio 3</title>
+		<style>
+			div{
+				margin-top: 2%;
+				background-color: aliceblue;
+			}
+			.button{
+				margin-top: 3%;
+				margin-left: 40%;
+				color: white;
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function corregir() {
+				var result = parseInt(0)
+				
+				if (document.getElementById("death").checked == true){
+					result = result + parseInt(2)
+				}
+				if (document.getElementById("imp").checked == true) {
+					result = result + parseInt(2)
+				}
+				if (document.getElementById("dur").checked == true) {
+					result = result + parseInt(2)
+				}
+				if (document.getElementById("sort").checked == true) {
+					result = result + parseInt(2)
+				}
+				if (document.getElementById("libr").checked == true) {
+					result = result + parseInt(2)
+				}
+				alert("Tu nota es: " + result)
+			}
+
+		</script>
+
+		<div>
+			¿Quién creó la varita de Saúco?<br>
+			Seleccione una:
+			<form name="p1">
+				<input type="radio" name="resp1" id="albus">a. Albus Dumbledore <br>
+				<input type="radio" name="resp1" id="death">b. La Muerte <br>
+				<input type="radio" name="resp1" id="Ollivan">c. Garrick Ollivander <br>
+				<input type="radio" name="resp1" id="Rubeus">d. Rubeus Hagrid <br>
+			</form>
+		</div>
+		<div>
+			¿Cuál es una de las maldiciones imperdonables?<br>
+			Seleccione una:
+			<form name="p2">
+				<input type="radio" name="resp2" id="imp">a. Imperio <br>
+				<input type="radio" name="resp2" id="con">b. Confuso <br>
+				<input type="radio" name="resp2" id="bom">c. Bombarda <br>
+				<input type="radio" name="resp2" id="opp">d. Oppugno <br>
+			</form>
+		</div>
+		<div>
+			¿Cómo se llama la tía de Harry Potter?<br>
+			Seleccione una:
+			<form name="p3">
+				<input type="radio" name="resp3" id="max">a. Olympe Maxime <br>
+				<input type="radio" name="resp3" id="dur">b. Petunia Dursley <br>
+				<input type="radio" name="resp3" id="umb">c. Dolores Umbridge <br>
+				<input type="radio" name="resp3" id="gon">d. Minerva McGonagall <br>
+			</form>
+		</div>
+		<div>
+			¿Cómo se llamaba la tienda de bromas de los gemelos Weasley?<br>
+			Seleccione una:
+			<form name="p4">
+				<input type="radio" name="resp4" id="marv">a. Maravillas de la brujería Weasley<br>
+				<input type="radio" name="resp4" id="whomp">b. Los whompers de Weasley <br>
+				<input type="radio" name="resp4" id="sort">c. Sortilegios Weasley <br>
+				<input type="radio" name="resp4" id="mago">d. El mago de Weasley <br>
+			</form>
+		</div>
+		<div>
+			¿Qué pone en lápida de Dobby?<br>
+			Aquí yace Dobby: <br>
+
+			Seleccione una:
+			<form name="p5">
+				<input type="radio" name="resp5" id="sirv">a. El mejor sirviente.<br>
+				<input type="radio" name="resp5" id="amig">b. Un verdadero amigo.<br>
+				<input type="radio" name="resp5" id="calc">c. Maestro de los calcetines.<br>
+				<input type="radio" name="resp5" id="libr">d. Un elfo libre.<br>
+			</form>
+		</div>
+		<input class="button" type="button" value="Corregir" onclick="corregir()">
+	</body>
+</html>

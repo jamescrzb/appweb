@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>
+            Ejercicio 1
+        </title>
+        <style>
+            div{
+                width: 23%;
+                padding-bottom: 20%;
+                background-color: red;
+                margin-bottom: 0.1%;
+            }
+        </style>
+    </head>
+    <body>
+		<script>
+			function changetext() {
+				var text = prompt("Introduce el texto: ")
+				document.getElementById("div").innerHTML = text
+			}
+			function changecolor() {
+				var color = prompt("Introduce el color (en inglés): ")
+				document.getElementById("div").style.background = color
+			}
+		</script>
+        <div id="div">
+            Este es el contenido del div 1
+        </div> 
+        <input type="button" value="Cambiar texto" onclick="changetext()"><br>
+        <input type="button" value="Cambiar color de fondo" onclick="changecolor()"><br>
+        <input type="button" value="Cambiar tipo y color de letra" onclick="changetext(); changecolor()"><br>
+    </body>
+</html>
