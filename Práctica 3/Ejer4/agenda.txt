@@ -1,5 +1,0 @@
-Anthony;Programador;123456789;Salesianos;PHP
-Mario;Programador;682644168;Salesianos Atocha;Of course
-Anthony;Programador;682644168;Salesianos Atocha;Of course
-Anthony;Programador;123456789;Salesianos Atocha;Otras
-Jose Manuel;Base De Datos;987654321;Salesianos Atocha;MySQL
